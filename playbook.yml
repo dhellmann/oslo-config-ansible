@@ -1,0 +1,28 @@
+---
+- hosts: localhost
+  connection: local
+  roles:
+    - os-gen-config
+
+  vars:
+    oslo_config_schema: cinder-schema.yaml
+    oslo_config_output_file: ./cinder.conf
+    oslo_config:
+      DEFAULT:
+        transport_url: rabbit://user:password@hostname
+        verbose: true
+        default_log_levels:
+          - amqp=INFO
+          - boto=INFO
+        backup_compression_algorithm: none
+        enabled_backends:
+          - backend1
+          - backend2
+      backend1:
+        volume_backend_name: coho
+        coho_rpc_port: 99
+      backend2:
+        volume_backend_name: blockdevice
+        available_devices:
+          - /dev/sdb
+          - /dev/sdc

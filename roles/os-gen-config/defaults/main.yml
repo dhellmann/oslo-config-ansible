@@ -1,2 +1,3 @@
 ---
-# defaults file for os-gen-config
+# set to true to always show all configuration values
+oslo_config_show_defaults: false

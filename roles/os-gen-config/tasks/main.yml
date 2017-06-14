@@ -1,2 +1,15 @@
 ---
 # tasks file for os-gen-config
+- name: Load schema
+  shell:
+    cat "{{oslo_config_schema}}"
+  register: os_gen_config_schema_contents
+  when: oslo_config_schema is defined
+- name: Parse schema
+  set_fact:
+    os_gen_config_schema: "{{os_gen_config_schema_contents.stdout | from_yaml}}"
+- name: Generate config file
+  template: src=oslo_config.conf
+            dest="{{oslo_config_output_file}}"
+            backup=yes
+            mode=0644

@@ -1,5 +1,5 @@
 ---
 # set to true to always show all configuration values
-oslo_config_show_defaults: false
+config_show_defaults: false
 # set to true to show the help text
-oslo_config_show_help: false
+config_show_help: false

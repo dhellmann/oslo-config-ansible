@@ -7236,6 +7236,311 @@ options:
       secret: false
       short: null
       type: integer value
+    standard_opts:
+    - api_paste_config
+    - wsgi_log_format
+    - tcp_keepidle
+    - wsgi_default_pool_size
+    - max_header_line
+    - wsgi_keep_alive
+    - client_socket_timeout
+    - backdoor_port
+    - backdoor_socket
+    - log_options
+    - graceful_shutdown_timeout
+    - run_external_periodic_tasks
+    - rpc_conn_pool_size
+    - conn_pool_min_size
+    - conn_pool_ttl
+    - rpc_zmq_bind_address
+    - rpc_zmq_matchmaker
+    - rpc_zmq_contexts
+    - rpc_zmq_topic_backlog
+    - rpc_zmq_ipc_dir
+    - rpc_zmq_host
+    - zmq_linger
+    - rpc_poll_timeout
+    - zmq_target_expire
+    - zmq_target_update
+    - use_pub_sub
+    - use_router_proxy
+    - use_dynamic_connections
+    - zmq_failover_connections
+    - rpc_zmq_min_port
+    - rpc_zmq_max_port
+    - rpc_zmq_bind_port_retries
+    - rpc_zmq_serialization
+    - zmq_immediate
+    - zmq_tcp_keepalive
+    - zmq_tcp_keepalive_idle
+    - zmq_tcp_keepalive_cnt
+    - zmq_tcp_keepalive_intvl
+    - rpc_thread_pool_size
+    - rpc_message_ttl
+    - rpc_use_acks
+    - rpc_ack_timeout_base
+    - rpc_ack_timeout_multiplier
+    - rpc_retry_attempts
+    - subscribe_on
+    - executor_thread_pool_size
+    - rpc_response_timeout
+    - transport_url
+    - rpc_backend
+    - control_exchange
+    - debug
+    - log-config-append
+    - log-date-format
+    - log-file
+    - log-dir
+    - watch-log-file
+    - use-syslog
+    - use-journal
+    - syslog-log-facility
+    - use_stderr
+    - logging_context_format_string
+    - logging_default_format_string
+    - logging_debug_format_suffix
+    - logging_exception_prefix
+    - logging_user_identity_format
+    - default_log_levels
+    - publish_errors
+    - instance_format
+    - instance_uuid_format
+    - rate_limit_interval
+    - rate_limit_burst
+    - rate_limit_except_level
+    - fatal_deprecations
+    - config-file
+    - config-dir
+    - osapi_max_limit
+    - osapi_volume_base_URL
+    - resource_query_filters_file
+    - query_volume_filters
+    - allow_inuse_volume_type_modification
+    - use_forwarded_for
+    - public_endpoint
+    - backup_use_same_host
+    - backup_compression_algorithm
+    - backup_metadata_version
+    - backup_object_number_per_notification
+    - backup_timer_interval
+    - backup_ceph_conf
+    - backup_ceph_user
+    - backup_ceph_chunk_size
+    - backup_ceph_pool
+    - backup_ceph_stripe_unit
+    - backup_ceph_stripe_count
+    - backup_ceph_image_journals
+    - restore_discard_excess_bytes
+    - glusterfs_backup_mount_point
+    - glusterfs_backup_share
+    - backup_gcs_bucket
+    - backup_gcs_object_size
+    - backup_gcs_block_size
+    - backup_gcs_reader_chunk_size
+    - backup_gcs_writer_chunk_size
+    - backup_gcs_num_retries
+    - backup_gcs_retry_error_codes
+    - backup_gcs_bucket_location
+    - backup_gcs_storage_class
+    - backup_gcs_credential_file
+    - backup_gcs_project_id
+    - backup_gcs_user_agent
+    - backup_gcs_enable_progress_timer
+    - backup_gcs_proxy_url
+    - backup_mount_point_base
+    - backup_share
+    - backup_mount_options
+    - backup_file_size
+    - backup_sha_block_size_bytes
+    - backup_enable_progress_timer
+    - backup_posix_path
+    - backup_container
+    - backup_swift_url
+    - backup_swift_auth_url
+    - swift_catalog_info
+    - keystone_catalog_info
+    - backup_swift_auth
+    - backup_swift_auth_version
+    - backup_swift_tenant
+    - backup_swift_user_domain
+    - backup_swift_project_domain
+    - backup_swift_project
+    - backup_swift_user
+    - backup_swift_key
+    - backup_swift_container
+    - backup_swift_object_size
+    - backup_swift_block_size
+    - backup_swift_retry_attempts
+    - backup_swift_retry_backoff
+    - backup_swift_enable_progress_timer
+    - backup_swift_ca_cert_file
+    - backup_swift_auth_insecure
+    - backup_tsm_volume_prefix
+    - backup_tsm_password
+    - backup_tsm_compression
+    - backup_driver
+    - backup_service_inithost_offload
+    - cluster
+    - state_path
+    - my_ip
+    - glance_api_servers
+    - glance_api_version
+    - glance_num_retries
+    - glance_api_insecure
+    - glance_api_ssl_compression
+    - glance_ca_certificates_file
+    - glance_request_timeout
+    - enable_v1_api
+    - enable_v2_api
+    - enable_v3_api
+    - api_rate_limit
+    - osapi_volume_ext_list
+    - osapi_volume_extension
+    - volume_manager
+    - backup_manager
+    - scheduler_manager
+    - host
+    - storage_availability_zone
+    - default_availability_zone
+    - allow_availability_zone_fallback
+    - default_volume_type
+    - default_group_type
+    - volume_usage_audit_period
+    - rootwrap_config
+    - monkey_patch
+    - monkey_patch_modules
+    - service_down_time
+    - volume_api_class
+    - backup_api_class
+    - auth_strategy
+    - enabled_backends
+    - no_snapshot_gb_quota
+    - transfer_api_class
+    - consistencygroup_api_class
+    - group_api_class
+    - os_privileged_user_name
+    - os_privileged_user_password
+    - os_privileged_user_tenant
+    - os_privileged_user_auth_url
+    - compute_api_class
+    - nova_catalog_info
+    - nova_catalog_admin_info
+    - nova_endpoint_template
+    - nova_endpoint_admin_template
+    - cinder_internal_tenant_project_id
+    - cinder_internal_tenant_user_id
+    - enable_new_services
+    - volume_name_template
+    - snapshot_name_template
+    - backup_name_template
+    - db_driver
+    - fatal_exception_format_errors
+    - allowed_direct_url_schemes
+    - glance_catalog_info
+    - glance_core_properties
+    - image_conversion_dir
+    - message_ttl
+    - message_reap_interval
+    - quota_volumes
+    - quota_snapshots
+    - quota_consistencygroups
+    - quota_groups
+    - quota_gigabytes
+    - quota_backups
+    - quota_backup_gigabytes
+    - reservation_expire
+    - reservation_clean_interval
+    - until_refresh
+    - max_age
+    - quota_driver
+    - use_default_quota_class
+    - per_volume_size_limit
+    - scheduler_host_manager
+    - scheduler_max_attempts
+    - scheduler_default_filters
+    - scheduler_default_weighers
+    - scheduler_weight_handler
+    - scheduler_driver
+    - scheduler_json_config_location
+    - capacity_weight_multiplier
+    - allocated_capacity_weight_multiplier
+    - volume_number_multiplier
+    - report_interval
+    - periodic_interval
+    - periodic_fuzzy_delay
+    - osapi_volume_listen
+    - osapi_volume_listen_port
+    - osapi_volume_workers
+    - osapi_volume_use_ssl
+    - strict_ssh_host_key_policy
+    - ssh_hosts_key_file
+    - volume_transfer_salt_length
+    - volume_transfer_key_length
+    - enable_force_upload
+    - snapshot_same_host
+    - cloned_volume_same_az
+    - az_cache_duration
+    - num_shell_tries
+    - reserved_percentage
+    - iscsi_target_prefix
+    - iscsi_ip_address
+    - iscsi_secondary_ip_addresses
+    - iscsi_port
+    - num_volume_device_scan_tries
+    - volume_backend_name
+    - use_multipath_for_image_xfer
+    - enforce_multipath_for_image_xfer
+    - volume_clear
+    - volume_clear_size
+    - volume_clear_ionice
+    - iscsi_helper
+    - volumes_dir
+    - iet_conf
+    - chiscsi_conf
+    - iscsi_iotype
+    - volume_dd_blocksize
+    - volume_copy_blkio_cgroup_name
+    - volume_copy_bps_limit
+    - iscsi_write_cache
+    - iscsi_target_flags
+    - iscsi_protocol
+    - driver_client_cert_key
+    - driver_client_cert
+    - driver_use_ssl
+    - max_over_subscription_ratio
+    - scst_target_iqn_name
+    - scst_target_driver
+    - use_chap_auth
+    - chap_username
+    - chap_password
+    - driver_data_namespace
+    - filter_function
+    - goodness_function
+    - driver_ssl_cert_verify
+    - driver_ssl_cert_path
+    - trace_flags
+    - replication_device
+    - image_upload_use_cinder_backend
+    - image_upload_use_internal_tenant
+    - image_volume_cache_enabled
+    - image_volume_cache_max_size_gb
+    - image_volume_cache_max_count
+    - report_discard_supported
+    - storage_protocol
+    - backup_use_temp_snapshot
+    - enable_unsupported_driver
+    - backend_availability_zone
+    - num_iser_scan_tries
+    - iser_target_prefix
+    - iser_ip_address
+    - iser_port
+    - iser_helper
+    - migration_create_volume_timeout_secs
+    - volume_service_inithost_offload
+    - tcp_keepalive
+    - tcp_keepalive_interval
+    - tcp_keepalive_count
   backend:
     driver_option: ''
     driver_opts: {}
@@ -7265,6 +7570,8 @@ options:
       secret: false
       short: null
       type: string value
+    standard_opts:
+    - backend_host
   backend_defaults:
     driver_option: volume_backend_name
     driver_opts:
@@ -20541,6 +20848,66 @@ options:
       secret: false
       short: null
       type: integer value
+    standard_opts:
+    - num_shell_tries
+    - reserved_percentage
+    - iscsi_target_prefix
+    - iscsi_ip_address
+    - iscsi_secondary_ip_addresses
+    - iscsi_port
+    - num_volume_device_scan_tries
+    - volume_backend_name
+    - use_multipath_for_image_xfer
+    - enforce_multipath_for_image_xfer
+    - volume_clear
+    - volume_clear_size
+    - volume_clear_ionice
+    - iscsi_helper
+    - volumes_dir
+    - iet_conf
+    - chiscsi_conf
+    - iscsi_iotype
+    - volume_dd_blocksize
+    - volume_copy_blkio_cgroup_name
+    - volume_copy_bps_limit
+    - iscsi_write_cache
+    - iscsi_target_flags
+    - iscsi_protocol
+    - driver_client_cert_key
+    - driver_client_cert
+    - driver_use_ssl
+    - max_over_subscription_ratio
+    - scst_target_iqn_name
+    - scst_target_driver
+    - use_chap_auth
+    - chap_username
+    - chap_password
+    - driver_data_namespace
+    - filter_function
+    - goodness_function
+    - driver_ssl_cert_verify
+    - driver_ssl_cert_path
+    - trace_flags
+    - replication_device
+    - image_upload_use_cinder_backend
+    - image_upload_use_internal_tenant
+    - image_volume_cache_enabled
+    - image_volume_cache_max_size_gb
+    - image_volume_cache_max_count
+    - report_discard_supported
+    - storage_protocol
+    - backup_use_temp_snapshot
+    - enable_unsupported_driver
+    - backend_availability_zone
+    - num_iser_scan_tries
+    - iser_target_prefix
+    - iser_ip_address
+    - iser_port
+    - iser_helper
+    - volume_driver
+    - zoning_mode
+    - extra_capabilities
+    - suppress_requests_ssl_warnings
   barbican:
     driver_option: ''
     driver_opts: {}
@@ -20674,6 +21041,13 @@ options:
       secret: false
       short: null
       type: boolean value
+    standard_opts:
+    - barbican_endpoint
+    - barbican_api_version
+    - auth_endpoint
+    - retry_delay
+    - number_of_retries
+    - verify_ssl
   brcd_fabric_example:
     driver_option: ''
     driver_opts: {}
@@ -20893,6 +21267,17 @@ options:
       secret: false
       short: null
       type: string value
+    standard_opts:
+    - fc_southbound_protocol
+    - fc_fabric_address
+    - fc_fabric_user
+    - fc_fabric_password
+    - fc_fabric_port
+    - fc_fabric_ssh_cert_path
+    - zoning_policy
+    - zone_activate
+    - zone_name_prefix
+    - fc_virtual_fabric_id
   cisco_fabric_example:
     driver_option: ''
     driver_opts: {}
@@ -21067,6 +21452,15 @@ options:
       secret: false
       short: null
       type: string value
+    standard_opts:
+    - cisco_fc_fabric_address
+    - cisco_fc_fabric_user
+    - cisco_fc_fabric_password
+    - cisco_fc_fabric_port
+    - cisco_zoning_policy
+    - cisco_zone_activate
+    - cisco_zone_name_prefix
+    - cisco_zoning_vsan
   coordination:
     driver_option: ''
     driver_opts: {}
@@ -21157,6 +21551,11 @@ options:
       secret: false
       short: null
       type: floating point value
+    standard_opts:
+    - backend_url
+    - heartbeat
+    - initial_reconnect_backoff
+    - max_reconnect_backoff
   cors:
     driver_option: ''
     driver_opts: {}
@@ -21313,6 +21712,13 @@ options:
       secret: false
       short: null
       type: list value
+    standard_opts:
+    - allowed_origin
+    - allow_credentials
+    - expose_headers
+    - max_age
+    - allow_methods
+    - allow_headers
   cors.subdomain:
     driver_option: ''
     driver_opts: {}
@@ -21469,6 +21875,13 @@ options:
       secret: false
       short: null
       type: list value
+    standard_opts:
+    - allowed_origin
+    - allow_credentials
+    - expose_headers
+    - max_age
+    - allow_methods
+    - allow_headers
   database:
     driver_option: ''
     driver_opts: {}
@@ -21923,6 +22336,26 @@ options:
       secret: false
       short: null
       type: integer value
+    standard_opts:
+    - sqlite_synchronous
+    - backend
+    - connection
+    - slave_connection
+    - mysql_sql_mode
+    - idle_timeout
+    - min_pool_size
+    - max_pool_size
+    - max_retries
+    - retry_interval
+    - max_overflow
+    - connection_debug
+    - connection_trace
+    - pool_timeout
+    - use_db_reconnect
+    - db_retry_interval
+    - db_inc_retry_interval
+    - db_max_retry_interval
+    - db_max_retries
   fc-zone-manager:
     driver_option: ''
     driver_opts: {}
@@ -22081,6 +22514,14 @@ options:
       secret: false
       short: null
       type: boolean value
+    standard_opts:
+    - brcd_sb_connector
+    - cisco_sb_connector
+    - zone_driver
+    - zoning_policy
+    - fc_fabric_names
+    - fc_san_lookup_service
+    - enable_unsupported_driver
   healthcheck:
     driver_option: ''
     driver_opts: {}
@@ -22196,6 +22637,12 @@ options:
       secret: false
       short: null
       type: list value
+    standard_opts:
+    - path
+    - detailed
+    - backends
+    - disable_by_file_path
+    - disable_by_file_paths
   key_manager:
     driver_option: ''
     driver_opts: {}
@@ -22577,6 +23024,24 @@ options:
       secret: false
       short: null
       type: string value
+    standard_opts:
+    - api_class
+    - auth_type
+    - token
+    - username
+    - password
+    - user_id
+    - user_domain_id
+    - user_domain_name
+    - trust_id
+    - domain_id
+    - domain_name
+    - project_id
+    - project_name
+    - project_domain_id
+    - project_domain_name
+    - reauthenticate
+    - fixed_key
   keystone_authtoken:
     driver_option: ''
     driver_opts: {}
@@ -23295,6 +23760,38 @@ options:
       secret: false
       short: null
       type: string value
+    standard_opts:
+    - auth_uri
+    - auth_version
+    - delay_auth_decision
+    - http_connect_timeout
+    - http_request_max_retries
+    - cache
+    - certfile
+    - keyfile
+    - cafile
+    - insecure
+    - region_name
+    - signing_dir
+    - memcached_servers
+    - token_cache_time
+    - revocation_cache_time
+    - memcache_security_strategy
+    - memcache_secret_key
+    - memcache_pool_dead_retry
+    - memcache_pool_maxsize
+    - memcache_pool_socket_timeout
+    - memcache_pool_unused_timeout
+    - memcache_pool_conn_get_timeout
+    - memcache_use_advanced_pool
+    - include_service_catalog
+    - enforce_token_bind
+    - check_revocations_for_cached
+    - hash_algorithms
+    - service_token_roles
+    - service_token_roles_required
+    - auth_type
+    - auth_section
   matchmaker_redis:
     driver_option: ''
     driver_opts: {}
@@ -23470,6 +23967,15 @@ options:
       secret: false
       short: null
       type: integer value
+    standard_opts:
+    - host
+    - port
+    - password
+    - sentinel_hosts
+    - sentinel_group_name
+    - wait_timeout
+    - check_timeout
+    - socket_timeout
   nova_group:
     driver_option: ''
     driver_opts: {}
@@ -23699,6 +24205,17 @@ options:
       secret: false
       short: null
       type: string value
+    standard_opts:
+    - region_name
+    - interface
+    - token_auth_url
+    - cafile
+    - certfile
+    - keyfile
+    - insecure
+    - timeout
+    - auth_type
+    - auth_section
   oslo_concurrency:
     driver_option: ''
     driver_opts: {}
@@ -23754,6 +24271,9 @@ options:
       secret: false
       short: null
       type: string value
+    standard_opts:
+    - disable_process_locking
+    - lock_path
   oslo_messaging_amqp:
     driver_option: ''
     driver_opts: {}
@@ -24674,6 +25194,46 @@ options:
       secret: false
       short: null
       type: multi valued
+    standard_opts:
+    - container_name
+    - idle_timeout
+    - trace
+    - ssl
+    - ssl_ca_file
+    - ssl_cert_file
+    - ssl_key_file
+    - ssl_key_password
+    - allow_insecure_clients
+    - sasl_mechanisms
+    - sasl_config_dir
+    - sasl_config_name
+    - sasl_default_realm
+    - username
+    - password
+    - connection_retry_interval
+    - connection_retry_backoff
+    - connection_retry_interval_max
+    - link_retry_delay
+    - default_reply_retry
+    - default_reply_timeout
+    - default_send_timeout
+    - default_notify_timeout
+    - default_sender_link_timeout
+    - addressing_mode
+    - server_request_prefix
+    - broadcast_prefix
+    - group_request_prefix
+    - rpc_address_prefix
+    - notify_address_prefix
+    - multicast_address
+    - unicast_address
+    - anycast_address
+    - default_notification_exchange
+    - default_rpc_exchange
+    - reply_link_credit
+    - rpc_server_credit
+    - notify_server_credit
+    - pre_settled
   oslo_messaging_kafka:
     driver_option: ''
     driver_opts: {}
@@ -24891,6 +25451,17 @@ options:
       secret: false
       short: null
       type: integer value
+    standard_opts:
+    - kafka_default_host
+    - kafka_default_port
+    - kafka_max_fetch_bytes
+    - kafka_consumer_timeout
+    - pool_size
+    - conn_pool_min_size
+    - conn_pool_ttl
+    - consumer_group
+    - producer_batch_timeout
+    - producer_batch_size
   oslo_messaging_notifications:
     driver_option: ''
     driver_opts: {}
@@ -24993,6 +25564,11 @@ options:
       secret: false
       short: null
       type: integer value
+    standard_opts:
+    - driver
+    - transport_url
+    - topics
+    - retry
   oslo_messaging_rabbit:
     driver_option: ''
     driver_opts: {}
@@ -26256,6 +26832,63 @@ options:
       secret: false
       short: null
       type: floating point value
+    standard_opts:
+    - amqp_durable_queues
+    - amqp_auto_delete
+    - ssl
+    - ssl_version
+    - ssl_key_file
+    - ssl_cert_file
+    - ssl_ca_file
+    - kombu_reconnect_delay
+    - kombu_compression
+    - kombu_missing_consumer_retry_timeout
+    - kombu_failover_strategy
+    - rabbit_host
+    - rabbit_port
+    - rabbit_hosts
+    - rabbit_userid
+    - rabbit_password
+    - rabbit_login_method
+    - rabbit_virtual_host
+    - rabbit_retry_interval
+    - rabbit_retry_backoff
+    - rabbit_interval_max
+    - rabbit_max_retries
+    - rabbit_ha_queues
+    - rabbit_transient_queues_ttl
+    - rabbit_qos_prefetch_count
+    - heartbeat_timeout_threshold
+    - heartbeat_rate
+    - fake_rabbit
+    - channel_max
+    - frame_max
+    - heartbeat_interval
+    - ssl_options
+    - socket_timeout
+    - tcp_user_timeout
+    - host_connection_reconnect_delay
+    - connection_factory
+    - pool_max_size
+    - pool_max_overflow
+    - pool_timeout
+    - pool_recycle
+    - pool_stale
+    - default_serializer_type
+    - notification_persistence
+    - default_notification_exchange
+    - notification_listener_prefetch_count
+    - default_notification_retry_attempts
+    - notification_retry_delay
+    - rpc_queue_expiration
+    - default_rpc_exchange
+    - rpc_reply_exchange
+    - rpc_listener_prefetch_count
+    - rpc_reply_listener_prefetch_count
+    - rpc_reply_retry_attempts
+    - rpc_reply_retry_delay
+    - default_rpc_retry_attempts
+    - rpc_retry_delay
   oslo_messaging_zmq:
     driver_option: ''
     driver_opts: {}
@@ -26959,6 +27592,37 @@ options:
       secret: false
       short: null
       type: list value
+    standard_opts:
+    - rpc_zmq_bind_address
+    - rpc_zmq_matchmaker
+    - rpc_zmq_contexts
+    - rpc_zmq_topic_backlog
+    - rpc_zmq_ipc_dir
+    - rpc_zmq_host
+    - zmq_linger
+    - rpc_poll_timeout
+    - zmq_target_expire
+    - zmq_target_update
+    - use_pub_sub
+    - use_router_proxy
+    - use_dynamic_connections
+    - zmq_failover_connections
+    - rpc_zmq_min_port
+    - rpc_zmq_max_port
+    - rpc_zmq_bind_port_retries
+    - rpc_zmq_serialization
+    - zmq_immediate
+    - zmq_tcp_keepalive
+    - zmq_tcp_keepalive_idle
+    - zmq_tcp_keepalive_cnt
+    - zmq_tcp_keepalive_intvl
+    - rpc_thread_pool_size
+    - rpc_message_ttl
+    - rpc_use_acks
+    - rpc_ack_timeout_base
+    - rpc_ack_timeout_multiplier
+    - rpc_retry_attempts
+    - subscribe_on
   oslo_middleware:
     driver_option: ''
     driver_opts: {}
@@ -27034,6 +27698,10 @@ options:
       secret: false
       short: null
       type: boolean value
+    standard_opts:
+    - max_request_body_size
+    - secure_proxy_ssl_header
+    - enable_proxy_headers_parsing
   oslo_policy:
     driver_option: ''
     driver_opts: {}
@@ -27113,6 +27781,10 @@ options:
       secret: false
       short: null
       type: multi valued
+    standard_opts:
+    - policy_file
+    - policy_default_rule
+    - policy_dirs
   oslo_reports:
     driver_option: ''
     driver_opts: {}
@@ -27185,6 +27857,10 @@ options:
       secret: false
       short: null
       type: integer value
+    standard_opts:
+    - log_dir
+    - file_event_handler
+    - file_event_handler_interval
   oslo_versionedobjects:
     driver_option: ''
     driver_opts: {}
@@ -27212,6 +27888,8 @@ options:
       secret: false
       short: null
       type: boolean value
+    standard_opts:
+    - fatal_exception_format_errors
   profiler:
     driver_option: ''
     driver_opts: {}
@@ -27520,6 +28198,16 @@ options:
       secret: false
       short: null
       type: string value
+    standard_opts:
+    - enabled
+    - trace_sqlalchemy
+    - hmac_keys
+    - connection_string
+    - es_doc_type
+    - es_scroll_time
+    - es_scroll_size
+    - socket_timeout
+    - sentinel_service_name
   ssl:
     driver_option: ''
     driver_opts: {}
@@ -27639,4 +28327,10 @@ options:
       secret: false
       short: null
       type: string value
+    standard_opts:
+    - ca_file
+    - cert_file
+    - key_file
+    - version
+    - ciphers
 

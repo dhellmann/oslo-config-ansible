@@ -28,7 +28,7 @@
     - role: os-gen-config
       vars:
         config_schema: cinder-schema.yaml
-        dest: ./cinder2.conf
+        dest: ./cinder-without-dynamic-groups.conf
         config_data:
           DEFAULT:
             transport_url: rabbit://user:password@hostname
@@ -37,3 +37,15 @@
               - amqp=INFO
               - boto=INFO
             backup_compression_algorithm: none
+    - role: os-gen-config
+      vars:
+        config_schema: cinder-schema.yaml
+        dest: ./cinder-with-bad-option.conf
+        config_data:
+          DEFAULT:
+            enabled_backends:
+              - backend1
+          backend1:
+            volume_backend_name: coho
+            coho_rpc_port: 99
+            ztePoolVolAlarmStopAllocatedFlag: True

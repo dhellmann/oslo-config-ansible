@@ -5,6 +5,8 @@
     - role: os-gen-config
       vars:
         config_schema: cinder-schema.yaml
+        config_show_help: false
+        config_show_defaults: false
         dest: ./cinder.conf
         config_data:
           DEFAULT:
@@ -39,6 +41,22 @@
             backup_compression_algorithm: none
     - role: os-gen-config
       vars:
+        config_show_help: true
+        config_show_defaults: true
+        config_schema: cinder-schema.yaml
+        dest: ./cinder-with-defaults.conf
+        config_data:
+          DEFAULT:
+            transport_url: rabbit://user:password@hostname
+            verbose: true
+            default_log_levels:
+              - amqp=INFO
+              - boto=INFO
+            backup_compression_algorithm: none
+    - role: os-gen-config
+      vars:
+        config_show_help: false
+        config_show_defaults: false
         config_schema: cinder-schema.yaml
         dest: ./cinder-with-bad-option.conf
         config_data:

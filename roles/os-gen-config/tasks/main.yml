@@ -1,13 +1,12 @@
 ---
 # tasks file for os-gen-config
 - name: Load schema
-  shell:
-    cat "{{config_schema}}"
+  slurp: src="{{config_schema}}"
   register: os_gen_config_schema_contents
   when: config_schema is defined
 - name: Parse schema
   set_fact:
-    os_gen_config_schema: "{{os_gen_config_schema_contents.stdout | from_yaml}}"
+    os_gen_config_schema: "{{os_gen_config_schema_contents['content'] | b64decode | from_yaml}}"
 - name: Generate config file
   template: src=oslo_config.conf
             dest="{{dest}}"
